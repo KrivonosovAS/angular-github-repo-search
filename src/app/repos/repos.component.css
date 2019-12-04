@@ -1,0 +1,57 @@
+mat-paginator{
+  width: 80%;
+  margin: 5px auto;
+}
+
+mat-divider{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.search-result {
+  width: 80%;
+  margin: 0 auto;
+  height: 10%;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.search-result:hover{
+  background: rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.search-result a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  display: flex;
+}
+
+.repo-description{
+  text-align: left !important;
+  margin-right: auto;
+  margin-left: 5%;
+  width: 60%
+}
+
+.repo-image{
+  text-align: center !important;
+  margin-right: 5%;
+  margin-left: auto;
+  width: 20%
+}
+
+.repo-image {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.repo-image img{
+  width: 75px;
+  height: 75px;
+  margin-right: 10px;
+  margin-left: auto;
+}

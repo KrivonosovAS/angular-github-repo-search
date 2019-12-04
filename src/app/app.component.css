@@ -1,0 +1,14 @@
+h2 {
+  text-align: center;
+}
+
+.content{
+  margin: 80px auto;
+  width: 80%;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  padding: 50px;
+}

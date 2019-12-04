@@ -1,0 +1,30 @@
+<mat-paginator
+  *ngIf="result"
+  [length]="result.items.length"
+  [pageSize]="10"
+  [pageSizeOptions]="pageSizeOptions"
+  (page)="setPage($event.pageSize, $event.pageIndex)">
+</mat-paginator>
+<ng-container *ngIf="currentPage">
+  <ng-container *ngFor="let repo of currentPage">
+    <mat-divider></mat-divider>
+
+    <div class="search-result">
+      <a [href]="repo.html_url" target="_blank">
+        <div class="repo-description">
+          Repo name: <b>{{repo.name}}</b>
+          <br>
+          Description: {{repo.description}}
+          <br>
+          {{repo.language ? 'Language:' + repo.language :  ''}}
+          <br *ngIf="repo.language">
+          Watchers: {{repo.watchers_count}}
+        </div>
+        <div class="repo-image">
+          <img [src]="repo.owner.avatar_url">
+        </div>
+      </a>
+    </div>
+    <mat-divider></mat-divider>
+  </ng-container>
+</ng-container>
